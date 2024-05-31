@@ -5,7 +5,7 @@ export interface Prediction {
   probability: number;
 }
 
-const baseURL = 'http://localhost:8000';
+const baseURL = 'https://aiproject-backend.onrender.com';
 
 
 
