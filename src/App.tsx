@@ -14,7 +14,7 @@ function App() {
   /* Audio Recording Management */
   const [result, setResult] = useState<Prediction[]>(); // [1
   const [isRecording, setIsRecording] = useState(false);
-  const [audioUrl, setAudioUrl] = useState<string | null>(null);
+  const [_, setAudioUrl] = useState<string | null>(null);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
 
@@ -76,14 +76,6 @@ function App() {
 
 
 
-  const result_2 = {
-    overall: 33,
-    pronunciation: 55,
-    fluency: 63,
-    integrity: 40,
-    rhythm: 53,
-    speed: 220
-  };
 
 
   const stopRecording = () => {
